@@ -1,9 +1,14 @@
-// page.js
 import React from 'react';
-import Image from 'next/image';
 import Navbar from './_components/navbar';
 import Hero from './_components/hero';
 import Desc from './_components/desc';
+import BintangTamu from './_components/bintangtamu';
+import Timeline from './_components/timeline';
+import Tema from './_components/tema';
+import ApresiasiNominasi from './_components/apresiasinominasi';
+import KilasBalik from './_components/kilasbalik';
+import Sponsor from './_components/sponsor';
+import Footer from './_components/footer';
 
 export default function Home() {
   return (
@@ -11,6 +16,13 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Desc />
+      <BintangTamu />
+      <Timeline />
+      <Tema />
+      <ApresiasiNominasi />
+      <KilasBalik />
+      <Sponsor />
+      <Footer />
     </div>
   );
 }
