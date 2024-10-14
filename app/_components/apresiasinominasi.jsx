@@ -7,7 +7,7 @@ const ApresiasiNominasi = () => {
       <img
         src="/star-silver.svg"
         alt="Star Silver"
-        className="absolute left-0 top-16 w-[32rem] z-50"
+        className="absolute left-0 top-16 w-[32rem] z-10"
       />
       <div className="bg-white rounded-lg w-[95rem] relative text-center mt-[5rem]">
         <div className="relative">
