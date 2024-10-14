@@ -9,6 +9,7 @@ import ApresiasiNominasi from './_components/apresiasinominasi';
 import KilasBalik from './_components/kilasbalik';
 import Sponsor from './_components/sponsor';
 import Footer from './_components/footer';
+import Acaratamu from './_components/acaratamu';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Desc />
       <BintangTamu />
+      <Acaratamu />
       <Timeline />
       <Tema />
       <ApresiasiNominasi />
