@@ -9,7 +9,7 @@ const KilasBalik = () => {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/ncAhRU3K1jQ"
+          src="https://www.youtube.com/embed/lAoKGOW_CTg"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
