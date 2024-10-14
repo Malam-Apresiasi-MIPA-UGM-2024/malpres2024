@@ -26,6 +26,7 @@ module.exports = {
       },
       animation: {
         marquee: 'marquee 10s linear infinite',
+        'spin-slow' : 'spin 3s linear infinite',
       },
     },
     fontFamily: {
