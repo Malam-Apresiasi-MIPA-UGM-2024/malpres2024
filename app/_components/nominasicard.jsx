@@ -24,7 +24,7 @@ const Card = ({ title, desc }) => {
                 scrollTrigger: {
                     trigger: cardRef.current,
                     start: "top 80%", // Starts animation when top of the card is 80% from the top of the viewport
-                    toggleActions: "play none none reset", // Play the animation on scroll
+                    toggleActions: "play reverse play reverse", // Play the animation on scroll
                 },
             }
         );
