@@ -10,7 +10,7 @@ const Acaratamu = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          width: '80rem',
+          width: '98%',
           padding: '2rem',
           borderRadius: '15px',
           border: '5px solid white',
