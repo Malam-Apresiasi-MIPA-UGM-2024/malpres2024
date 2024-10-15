@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-2 border-[#E9557F] py-3 px-16 flex justify-between mt-4 mx-4 bg-[#FCD9C6] rounded-lg fixed top-0 left-0 right-0 z-20">
+    <nav className="border-2 w-[97vw] border-[#E9557F] py-3 px-[1rem] flex justify-between mt-4 mx-4 bg-[#FCD9C6] rounded-lg fixed top-0 left-0 right-0 z-20">
       <div className={`flex items-center mr-8 ${isOpen ? 'hidden' : ''}`}>
         <Image src="/logo_malpres.svg" alt="Malpres Logo" width={120} height={120} />
       </div>
