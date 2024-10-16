@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './_components/navbar';
 import Hero from './_components/hero';
 import Desc from './_components/desc';
@@ -13,18 +12,18 @@ import Acaratamu from './_components/acaratamu';
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Desc />
-      <BintangTamu />
-      <Acaratamu />
-      <Timeline />
-      <Tema />
-      <ApresiasiNominasi />
-      <KilasBalik />
-      <Sponsor />
-      <Footer />
-    </div>
+    <>
+          <Navbar />
+          <Hero />
+          <Desc />
+          <BintangTamu />
+          <Acaratamu />
+          <Timeline />
+          <Tema />
+          <ApresiasiNominasi />
+          <KilasBalik />
+          <Sponsor />
+          <Footer />
+    </>
   );
 }

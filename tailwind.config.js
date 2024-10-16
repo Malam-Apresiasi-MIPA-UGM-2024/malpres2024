@@ -23,11 +23,25 @@ module.exports = {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        customPulse: {
+          '0%, 100%': { opacity: '1' },  // Awal dan akhir tetap 100% opacity
+          '50%': { opacity: '0.2' },     // Tengah menjadi 20% opacity
+        },
+        flipX: {
+          '0%': { transform: 'perspective(400px) rotateY(90deg)', opacity: '0' },
+          '40%': { transform: 'perspective(400px) rotateY(-10deg)' },
+          '70%': { transform: 'perspective(400px) rotateY(10deg)' },
+          '100%': { transform: 'perspective(400px) rotateY(0deg)', opacity: '1' },
+        },
+
       },
       animation: {
         marquee: 'marquee 10s linear infinite',
         'spin-slow' : 'spin 3s linear infinite',
+        customPulse: 'customPulse 0.5s infinite',
+        flipX: 'flipX 1.8s linear infinite',
       },
+
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],

@@ -1,10 +1,7 @@
 "use client"
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import { useRef, useState } from 'react';
+import LoadingScreen from '../_components/loadingscreen'; // Import komponen LoadingScreen
 
 const Comingsoon = () => {
     const textRef = useRef(null);
@@ -12,60 +9,10 @@ const Comingsoon = () => {
     const buttonRef = useRef(null);
     const [loading, setLoading] = useState(true); // State untuk loading screen
 
-    useEffect(() => {
-        // Set timeout untuk simulasi waktu loading
-        const timeout = setTimeout(() => {
-            setLoading(false); // Menyembunyikan loading screen setelah selesai
-        }, 3000); // Sesuaikan dengan waktu yang kamu inginkan
-
-        return () => clearTimeout(timeout);
-    }, []);
-
-    useEffect(() => {
-        const timeline = gsap.timeline({
-            scrollTrigger: {
-                trigger: textRef.current,
-                start: "top 80%", // Mulai animasi ketika 80% elemen terlihat
-                toggleActions: "play none none reset", // Mengulang animasi ketika scroll ke atas lagi
-            }
-        });
-
-        // Tambahkan animasi untuk elemen-elemen
-        timeline
-            .fromTo(
-                textRef.current,
-                { opacity: 0, scale: 0.5 },
-                { opacity: 1, scale: 1, duration: 4, ease: "power2.out" }
-            )
-            .fromTo(
-                paragraphRef.current,
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 2, ease: "power2.out" },
-                "-=0.5"
-            )
-            .fromTo(
-                buttonRef.current,
-                { opacity: 0, scale: 0.5 },
-                { opacity: 1, scale: 1, duration: 1.5, ease: "power2.out" },
-                "-=0.5"
-            );
-    }, []);
-
     return (
         <div>
-            {/* Loading screen */}
-            <div className={`fixed inset-0 flex items-center justify-center z-50 transition-opacity duration-500 ${loading ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-                 style={{ background: "linear-gradient(180deg, #B7CB99 0%, #E4BBC8 50%, #FFBACE 100%)" }}>
-                {/* Animasi silver-malpres */}
-                <div className="animate-pulse">
-                    <Image
-                        src="/silver-malpres.png"
-                        alt="Silver Malpres"
-                        width={600}
-                        height={600}
-                    />
-                </div>
-            </div>
+            {/* Memanggil LoadingScreen */}
+            <LoadingScreen setLoading={setLoading} />
 
             {/* Konten utama */}
             <div className={`relative bg-[url('/sm-comingsoon.svg')] md:bg-[url('/md-comingsoon.svg')] lg:bg-[url('/lg-comingsoon.svg')] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center transition-opacity duration-1000 ${loading ? "opacity-0" : "opacity-100"}`}>

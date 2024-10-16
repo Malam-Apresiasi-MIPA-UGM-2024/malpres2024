@@ -40,7 +40,7 @@ const HeroSection = () => {
         >
             <div className={`flex flex-col items-center`}>
                 <h1
-                    className="text-7xl md:text-8xl lg:text-9xl mb-5 py-10 font-extrabold text-white whitespace-pre-wrap"
+                    className="text-7xl md:text-8xl mb-5 py-10 font-extrabold text-white whitespace-pre-wrap"
                     style={{
                         WebkitTextStroke: '3px #DA1C5C',
                     }}
