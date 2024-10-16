@@ -33,12 +33,12 @@ const Card = ({ title, desc }) => {
     return (
         <div
             ref={cardRef}
-            className="bg-white shadow-md w-56 flex flex-col justify-center items-start md:flex-row md:justify-start md:w-full md:h-40"
+            className="bg-[#f8e6d2] shadow-md w-56 flex flex-col justify-center items-start md:flex-row md:justify-start md:w-full md:h-40"
         >
             <div className="border bg-[#D9D9D9] min-h-44 h-full w-full md:min-h-40 md:min-w-44 md:max-w-48 lg:min-w-48">
                 <img src="" alt="" />
             </div>
-            <div className="min-h-60 w-auto py-2 px-4 flex flex-col sm:justify-evenly flex-grow md:flex md:flex-row lg:min-h-auto ">
+            <div className="min-h-64 w-auto py-2 px-4 flex flex-col sm:justify-evenly flex-grow md:flex md:flex-row lg:min-h-auto ">
                 <div className="flex flex-col w-auto mb-auto lg:mt-4 md:pr-10">
                     <div>
                         <h2 className=" text-xl font-bold text-[#E9557F] lg:text-2xl">{title}</h2>

@@ -1,35 +1,52 @@
+"use client"
+import { useState, useEffect } from 'react';
 import Navbar from "../_components/navbar";
 import Footer from "../_components/footer";
 import HeroSection from "../_components/nominasihero";
 import Card from "../_components/nominasicard";
 import KategoriApresiasi from "../_components/nominasikategorismalltext";
-
+import LoadingScreen from "../_components/loadingscreen"; // Impor komponen LoadingScreen
 
 const Nominasi = () => {
+    const [loading, setLoading] = useState(true); // State untuk loading
+
+    useEffect(() => {
+        // Simulasi waktu loading
+        const timeout = setTimeout(() => {
+            setLoading(false); // Sembunyikan loading screen setelah selesai
+        }, 2000);
+
+        return () => clearTimeout(timeout);
+    }, []);
+
     return (
         <>
-            <Navbar />
-            <div className="mb-auto font-poppins">
-                <HeroSection />
-                <KategoriApresiasi />
-                <div className="mt-4">
-                    {/* List Kategori */}
-                    <div className="mx-5 md:mx-9 mb-20 flex flex-wrap justify-center gap-3 md:flex-col min-w-[360px] min-h-[648px] md:gap-7">
-                        {kategoriList.map((kategori) => (
-                            <Card
-                                key={kategori.title}
-                                title={kategori.title}
-                                desc={kategori.desc}
-                            />
-                        ))}
+            {loading && <LoadingScreen setLoading={setLoading} />} {/* Tampilkan loading screen jika masih loading */}
+
+            {/* Konten utama */}
+            <div className={`transition-opacity duration-1000 ${loading ? "opacity-0" : "opacity-100"}`}>
+                <Navbar />
+                <div className="mb-auto font-poppins bg-[url('/rasengan.svg')] bg-cover bg-no-repeat bg-center">
+                    <HeroSection />
+                    <KategoriApresiasi />
+                    <div className="mt-4">
+                        {/* List Kategori */}
+                        <div className="mx-5 md:mx-9 mb-20 flex flex-wrap justify-center gap-3 md:flex-col min-w-[360px] min-h-[648px] md:gap-7">
+                            {kategoriList.map((kategori) => (
+                                <Card
+                                    key={kategori.title}
+                                    title={kategori.title}
+                                    desc={kategori.desc}
+                                />
+                            ))}
+                        </div>
                     </div>
+                    <Footer />
                 </div>
-                <Footer />
             </div>
         </>
     )
 }
-
 export default Nominasi;
 
 const kategoriList = [

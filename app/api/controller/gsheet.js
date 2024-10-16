@@ -49,7 +49,8 @@ async function clear(cells, client) {
   return response.data
 }
 
-async function properties(client) {
+//get the properties of each sheet in your spreadsheet
+async function sheetProperties(client) {
   const sheets = google.sheets({ version: "v4", auth: client })
   const response = await sheets.spreadsheets.get({
     spreadsheetId: spreadsheetsID
@@ -57,4 +58,4 @@ async function properties(client) {
   return response.data.sheets
 }
 
-export { read, write, append, clear, properties }
+export { read, write, append, clear, sheetProperties }
