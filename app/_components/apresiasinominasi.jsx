@@ -29,7 +29,7 @@ const ApresiasiNominasi = () => {
             <p className="text-xl md:text-3xl mx-6 my-6 font-normal">
               beri penghargaan terhadap yang terbaik atas pencapaian yang diraih
             </p>
-            <button className="bg-[#E9557F] hover:bg-pink-600 text-white py-2 px-4 rounded-lg border-2 border-white text-[1.5rem]">
+            <button className="bg-[#E9557F] hover:bg-pink-600 text-white py-2 px-4 rounded-lg border-2 border-white text-[1rem] md:text-[1.5rem] mx-[1rem]">
               Beri Pilihanmu Sekarang!
             </button>
           </div>
