@@ -30,15 +30,26 @@ body {
   .text-stroke {
     -webkit-text-stroke: 2px #E9557F; /* Mengatur ketebalan dan warna outline */
   }
+
+  .text-stroke2 {
+    -webkit-text-stroke: 0.5px black; /* Mengatur ketebalan dan warna outline untuk layar dengan lebar minimal 768px */
+  }
 }
 
 @media (min-width: 768px) {
   .text-stroke {
     -webkit-text-stroke: 3px #E9557F; /* Mengatur ketebalan dan warna outline untuk layar dengan lebar minimal 768px */
   }
+  .text-stroke2 {
+    -webkit-text-stroke: 0.5px black; /* Mengatur ketebalan dan warna outline untuk layar dengan lebar minimal 768px */
+  }
 }
 @media (min-width: 1034px) {
   .text-stroke {
     -webkit-text-stroke: 4px #E9557F; /* Mengatur ketebalan dan warna outline untuk layar dengan lebar minimal 768px */
+  }
+
+  .text-stroke2 {
+    -webkit-text-stroke: 0.5px black; /* Mengatur ketebalan dan warna outline untuk layar dengan lebar minimal 768px */
   }
 }
