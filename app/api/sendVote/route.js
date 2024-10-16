@@ -53,8 +53,6 @@ export async function POST(req, res) {
         let { namaLengkap, email, NIM, departemen, jurusan, pilihan } = req;
         let values = [[namaLengkap, email, NIM, departemen, jurusan, pilihan]];
         append(nominasi + "!A2", values, client)
-        let header = { values: Object.keys(req) }
-        write(nominasi + "!A1", header, client)
         return NextResponse.json({ result: "success", status: 200 })
     } catch (err) {
         return NextResponse.json({ result: "failed", status: 400, error: err}, {status: 400})
