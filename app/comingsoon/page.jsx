@@ -38,7 +38,7 @@ const Comingsoon = () => {
 
     return (
         <div>
-            {loading && <LoadingScreen setLoading={setLoading}/>} {/* Tampilkan LoadingScreen hanya saat loading */}
+            {loading && <LoadingScreen setLoading={setLoading}/>} {/* Tampilkan loading screen jika loading masih true */}
 
             {/* Konten utama */}
             <div className={`relative bg-[url('/sm-comingsoon.svg')] md:bg-[url('/md-comingsoon.svg')] lg:bg-[url('/lg-comingsoon.svg')] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center transition-opacity duration-1000 ${loading ? "opacity-0" : "opacity-100"}`}>
