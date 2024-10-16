@@ -15,17 +15,17 @@ const Timeline = () => {
         <div className="bg-white rounded-lg p-2 mb-8 w-48 text-center font-bold text-[#E9557F] text-xl relative z-10 border-4 border-black">
             Timeline
         </div>
-      <div className="flex justify-around w-full max-w-4xl space-x-2 relative z-10 mb-[2rem]">
-        <div className="text-center">
-          <img src="/img-timeline.svg" alt="Guest 1" className="w-full rounded-lg" />
+        <div className="flex flex-col md:flex-row justify-around w-full max-w-4xl space-y-4 md:space-y-0 md:space-x-2 relative z-10 mb-[2rem]">
+          <div className="text-center">
+            <img src="/img-timeline.svg" alt="Guest 1" className="w-full rounded-lg" />
+          </div>
+          <div className="text-center">
+            <img src="/img-timeline.svg" alt="Guest 2" className="w-full rounded-lg" />
+          </div>
+          <div className="text-center">
+            <img src="/img-timeline.svg" alt="Guest 3" className="w-full rounded-lg" />
+          </div>
         </div>
-        <div className="text-center">
-          <img src="/img-timeline.svg" alt="Guest 2" className="w-full rounded-lg" />
-        </div>
-        <div className="text-center">
-          <img src="/img-timeline.svg" alt="Guest 3" className="w-full rounded-lg" />
-        </div>
-      </div>
 
       {/* Animated Text at the Bottom */}
       <div className="bg-[#FFFBE6] text-[#E92F77] text-[32px] flex justify-around overflow-hidden absolute bottom-0 left-0 right-0 border-2 border-black">

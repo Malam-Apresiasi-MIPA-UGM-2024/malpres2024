@@ -6,11 +6,16 @@ const BintangTamu = () => {
       </div>
       {/* Star Element */}
       <div className="absolute left-0 transform -translate-y-1/2 z-0 mt-[12rem]">
-        <img src="/star-pink.svg" alt="Star" className="w-[80%] opacity-50" style={{ filter: 'brightness(0) saturate(100%)' }} />
+        <img
+          src="/star-pink.svg"
+          alt="Star"
+          className="w-[80%] opacity-50"
+          style={{ filter: 'brightness(0) saturate(100%)' }}
+        />
       </div>
       {/* Container */}
-      <div className="flex justify-around w-full max-w-4xl space-x-2 relative z-10 mb-[2rem]">
-        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2">
+      <div className="flex flex-col md:flex-row justify-around w-full max-w-4xl space-y-4 md:space-x-2 md:space-y-0 relative z-10 mb-[2rem]">
+        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-full md:w-auto">
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
@@ -19,7 +24,7 @@ const BintangTamu = () => {
             </div>
           </div>
         </div>
-        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2">
+        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-full md:w-auto">
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
@@ -28,7 +33,7 @@ const BintangTamu = () => {
             </div>
           </div>
         </div>
-        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2">
+        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-full md:w-auto">
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
