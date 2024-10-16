@@ -14,7 +14,7 @@ const KilasBalik = () => {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="rounded-lg"
+          className="rounded-lg w-full h-64 md:w-96 md:h-56 lg:w-[560px] lg:h-[315px] mx-[1rem]"
         ></iframe>
       </div>
     </div>
