@@ -19,7 +19,7 @@ const BintangTamu = () => {
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
-              <p className="font-bold text-[1.5rem] text-start ml-[1rem]">To Be Announced</p>
+              <p className="font-bold md:text-2xl text-4xl text-start ml-[1rem]">To Be Announced</p>
               <img src="/play-button.svg" alt="play-button" className="mr-[1rem]" />
             </div>
           </div>
@@ -28,7 +28,7 @@ const BintangTamu = () => {
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
-              <p className="font-bold text-[1.5rem] text-start ml-[1rem]">To Be Announced</p>
+              <p className="font-bold md:text-2xl text-4xl text-start ml-[1rem]">To Be Announced</p>
               <img src="/play-button.svg" alt="play-button" className="mr-[1rem]" />
             </div>
           </div>
@@ -37,7 +37,7 @@ const BintangTamu = () => {
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
-              <p className="font-bold text-[1.5rem] text-start ml-[1rem]">To Be Announced</p>
+              <p className="font-bold md:text-2xl text-4xl text-start ml-[1rem]">To Be Announced</p>
               <img src="/play-button.svg" alt="play-button" className="mr-[1rem]" />
             </div>
           </div>

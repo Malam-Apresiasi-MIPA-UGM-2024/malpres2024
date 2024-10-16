@@ -11,7 +11,7 @@ const Hero = () => {
           <img src="/logo-hero-malpres.svg" alt="Malpres Logo" className="w-512 h-512" />
         </div>
         <div className="absolute inset-x-0 bottom-8 w-[90%] max-w-[639px] h-16 bg-white mx-auto md:flex justify-between items-center p-2 rounded-lg z-10 hidden">
-          <span className="text-base md:text-lg lg:text-xl font-bold text-[#E9557F]">Beli Tiket Malam Apresiasi Sekarang!</span>
+          <span className="text-base md:text-lg lg:text-xl font-bold text-[#E9557F] ml-[2rem]">Dapatkan Tiket Sekarang!</span>
           <button className="bg-[#E9557F] text-white text-sm md:text-base lg:text-lg py-2 px-4 w-56 rounded-lg hover:bg-pink-400">
             Beli Sekarang
           </button>

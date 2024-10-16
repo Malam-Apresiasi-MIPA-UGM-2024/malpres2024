@@ -23,7 +23,7 @@ export default function Home() {
       <Tema />
       <ApresiasiNominasi />
       <KilasBalik />
-      <Sponsor />
+      {/* <Sponsor /> */}
       <Footer />
     </div>
   );
