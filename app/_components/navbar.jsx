@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       <div className={`flex items-center space-x-8 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
-        <a href="/voting" className="text-[#E9557F] hover:text-pink-500">Voting</a>
+        <a href="/coming" className="text-[#E9557F] hover:text-pink-500">Voting</a>
         <button className="bg-[#E9557F] text-white py-2 px-6 rounded-lg hover:bg-pink-400">
           Beli Tiket
         </button>
