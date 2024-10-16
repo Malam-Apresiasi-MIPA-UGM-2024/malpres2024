@@ -1,13 +1,19 @@
 "use client"
-import { useState, useEffect } from 'react';
-import Navbar from "../_components/navbar";
+import { notFound } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import Footer from "../_components/footer";
-import HeroSection from "../_components/nominasihero";
-import Card from "../_components/nominasicard";
-import KategoriApresiasi from "../_components/nominasikategorismalltext";
 import LoadingScreen from "../_components/loadingscreen"; // Impor komponen LoadingScreen
+import Navbar from "../_components/navbar";
+import Card from "../_components/nominasicard";
+import HeroSection from "../_components/nominasihero";
+import KategoriApresiasi from "../_components/nominasikategorismalltext";
 
 const Nominasi = () => {
+    const belumRilis = true;
+    if(belumRilis) {
+        notFound();
+    }
+
     const [loading, setLoading] = useState(true); // State untuk loading
 
     useEffect(() => {
