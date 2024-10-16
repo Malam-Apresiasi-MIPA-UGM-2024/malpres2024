@@ -3,8 +3,8 @@
 const Tema = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-[url('/bg-tema.svg')] bg-cover bg-center w-full h-full">
-      <div className="w-auto py-2 px-3 bg-[#FFFFFF] rounded-lg mt-[8rem] mb-[2rem] ">
-        <h2 className="text-xl font-bold text-center text-[#E9557F]">Tema MALPRES</h2>
+      <div className="mt-[3rem] bg-white rounded-lg p-3 mb-8 w-48 text-center font-bold text-[#E9557F] text-xl">
+        Tema Malpres
       </div>
       <div className="mt-4">
       <h1

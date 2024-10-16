@@ -12,11 +12,14 @@ const ApresiasiNominasi = () => {
       <div className="rounded-lg w-[95rem] relative text-center mt-[5rem] border-white border-2 mx-[1rem]">
         {/* Background image */}
         <div className="relative">
+        <div className="relative w-full h-[550px] rounded-lg overflow-hidden">
           <img
-            src="/bg-apresiasi.svg"
+            src="/bg-apresiasinominasi.png"
             alt="Apresiasi Nominasi"
-            className="w-full h-[550px] rounded-lg opacity-90 object-cover object-center"
+            className="w-full h-full object-cover object-center opacity-90 filter blur-xs"
           />
+          <div className="absolute inset-0 bg-[#E9557F] opacity-50"></div>
+        </div>
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
             <h1
               className="text-5xl md:text-7xl font-extrabold mb-2"

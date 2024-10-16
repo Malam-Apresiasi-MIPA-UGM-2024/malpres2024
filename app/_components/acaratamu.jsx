@@ -2,28 +2,30 @@ import React from 'react';
 
 const Acaratamu = () => {
   return (
-    <div className="bg-[#B7BC99] p-8 flex flex-col items-center justify-center relative">
-      {/* Background Image */}
-      <div className="flex flex-col items-center justify-center w-full">
+    <div className="relative bg-[url('/gikgum.jpg')] bg-cover bg-center p-8 flex flex-col items-center justify-center">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#E9557F] opacity-50"></div>
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center w-full">
         <div className="relative z-10 bg-white rounded-lg p-3 mb-8 w-48 text-center font-bold text-[#E9557F] text-xl">
           Acara Tamu
         </div>
         <div className="relative z-10 flex flex-col md:flex-row justify-around w-full max-w-4xl space-y-4 md:space-y-0 md:space-x-2 mb-[2rem]">
-          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-auto">
+          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-1/3">
             <img src="/realityclub.svg" alt="Guest 1" className="w-full rounded-lg" />
             <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-transparent rounded-b-lg"></div>
             <div className="absolute bottom-0 left-0 w-full h-1/4 flex p-[1rem]">
               <p className="text-white font-bold text-2xl">To Be Announced</p>
             </div>
           </div>
-          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-auto">
+          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-1/3">
             <img src="/realityclub.svg" alt="Guest 2" className="w-full rounded-lg" />
             <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-transparent rounded-b-lg"></div>
             <div className="absolute bottom-0 left-0 w-full h-1/4 flex p-[1rem] text-3xl">
               <p className="text-white font-bold text-2xl">To Be Announced</p>
             </div>
           </div>
-          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-auto">
+          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-1/3">
             <img src="/realityclub.svg" alt="Guest 3" className="w-full rounded-lg" />
             <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-transparent rounded-b-lg"></div>
             <div className="absolute bottom-0 left-0 w-full h-1/4 flex p-[1rem] text-3xl">

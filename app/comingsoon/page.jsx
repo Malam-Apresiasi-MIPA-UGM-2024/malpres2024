@@ -72,9 +72,11 @@ const Comingsoon = () => {
                     </div>
 
                     {/* Tombol */}
+                    <a href="/">
                     <button ref={buttonRef} className="mt-3 bg-[#E9557F] font-poppins text-[#F8E6D2] font-bold md:text-xl lg:font-semibold lg:text-2xl px-4 py-1 lg:py-2 rounded-xl shadow-lg border-2 border-[#F8E6D2] hover:bg-pink-600">
                         Kembali ke beranda
                     </button>
+                    </a>
                 </div>
             </div>
         </div>

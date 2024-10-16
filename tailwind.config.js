@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         poppins: ['var(--font-poppins)']
       },
+      blur: {
+        xs: '2px', // Custom blur value
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

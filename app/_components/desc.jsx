@@ -17,9 +17,9 @@ const Desc = () => {
             >
                 {/* Title */}
                 <div className="flex justify-center items-center min-h-[2rem] mt-[2rem]">
-                    <div className="bg-[#FFFFFF] p-3 rounded-lg mt-[1rem]">
-                    <h1 className="text-xl font-bold text-center text-[#E9557F]">Tentang Malpres</h1>
-                    </div>
+                  <div className="bg-white rounded-lg p-3 mb-6 w-48 text-center font-bold text-[#E9557F] text-xl">
+                    Tentang Malpres
+                  </div>
                 </div>
                 {/* Description */}
                 <div className="flex justify-center items-center mt-4">
