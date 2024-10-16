@@ -14,14 +14,14 @@ const Tema = () => {
       </h1>
       </div>
       <div>
-        <h2 className="text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold text-center text-[#EEC4A9]"
+        <h2 className="text-xl md:text-2xl font-bold text-center text-[#EEC4A9] mt-[1rem]"
         style={{
           WebkitTextStroke: '1px #000000',
         }}>
           Penghargaan. Pencapaian. Kesempurnaan
         </h2>
       </div>
-      <div className="mb-[8rem] mt-[1rem]">
+      <div className="mx-[1rem] mb-[8rem] mt-[1rem]">
         <p className="text-center">
         Puncak keberhasilan dari semua perjuangan/kontribusi yang telah diusahakan oleh seluruh warga FMIPA (dosen/mahasiswa/tendik/lembaga) untuk <br />
         mewujudkan FMIPA yang semakin solid dan unggul.
