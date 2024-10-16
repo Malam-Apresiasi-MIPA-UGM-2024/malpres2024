@@ -62,9 +62,3 @@ export async function POST(req, res) {
       })
     }
   } 
-
-export const config = {
-    api: {
-      externalResolver: true,
-    },
-  }

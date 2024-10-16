@@ -72,9 +72,3 @@ function isData(data) {
     data["pilihan"] !== undefined
   )
 }
-
-export const config = {
-  api: {
-    externalResolver: true,
-  },
-}
