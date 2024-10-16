@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="mt-28 relative">
       <div
-        className="w-[97vw] h-[400px] md:h-[600px] bg-black mx-auto mt-8 bg-cover bg-center border-2 border-[#E9557F] rounded-lg"
+        className="w-[97vw] h-[400px] md:h-[600px] bg-[#E9557F] mx-auto mt-8 bg-cover bg-center border-2 border-[#E9557F] rounded-lg"
         style={{ backgroundImage: "url('/banner_malpres.svg')" }}
       >
         <div className="absolute inset-0 flex justify-center items-center">
