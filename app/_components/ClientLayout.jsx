@@ -2,7 +2,7 @@
 'use client'; // Tambahkan directive 'use client' untuk menandai ini sebagai komponen client-side
 
 import { useState, useEffect } from 'react';
-import Loading from './Loading';
+import LoadingScreen from './loadingscreen';
 
 export default function ClientLayout({ children }) {
   const [isLoading, setIsLoading] = useState(true); // State untuk mengontrol loading
@@ -11,7 +11,7 @@ export default function ClientLayout({ children }) {
     // Timer untuk menunda selama 1 detik sebelum memuat konten
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 2800);
 
     return () => clearTimeout(timer); // Bersihkan timer saat komponen unmount
   }, []);
@@ -19,7 +19,7 @@ export default function ClientLayout({ children }) {
   return (
     <>
       {/* Tampilkan loading screen selama 1 detik */}
-      {isLoading ? <Loading /> : children}
+      {isLoading ? <LoadingScreen setLoading={setIsLoading} /> : children}
     </>
   );
 }

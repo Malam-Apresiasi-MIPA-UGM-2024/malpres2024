@@ -10,7 +10,7 @@ const LoadingScreen = ({ setLoading }) => {
         const timeout = setTimeout(() => {
             setIsVisible(false); // Sembunyikan loading screen setelah 2 detik
             setLoading(false); // Mengirim status loading ke parent
-        }, 2000);
+        }, 2800);
 
         return () => clearTimeout(timeout);
     }, [setLoading]);

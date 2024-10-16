@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import Image from 'next/image';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
+import gsap from 'gsap';
 import LoadingScreen from '../_components/loadingscreen'; // Import komponen LoadingScreen
 
 const Comingsoon = () => {
@@ -9,10 +10,35 @@ const Comingsoon = () => {
     const buttonRef = useRef(null);
     const [loading, setLoading] = useState(true); // State untuk loading screen
 
+    useEffect(() => {
+        // Simulasi waktu loading
+        const timeout = setTimeout(() => {
+            setLoading(false); // Sembunyikan loading screen setelah selesai
+        }, 2000);
+
+        return () => clearTimeout(timeout);
+    }, []);
+
+    useEffect(() => {
+        // Jalankan GSAP animasi setelah loading selesai
+        if (!loading && textRef.current && paragraphRef.current && buttonRef.current) {
+            gsap.fromTo(
+                [textRef.current, paragraphRef.current, buttonRef.current],
+                { opacity: 0, y: 50 }, // Awal animasi (opacity 0 dan posisi ke bawah)
+                {
+                    opacity: 1,
+                    y: 0, // Akhir animasi (opacity 1 dan kembali ke posisi semula)
+                    duration: 1,
+                    stagger: 0.2, // Memberikan jeda waktu antara setiap elemen
+                    ease: "power3.out"
+                }
+            );
+        }
+    }, [loading]); // Tambahkan dependency untuk animasi GSAP
+
     return (
         <div>
-            {/* Memanggil LoadingScreen */}
-            <LoadingScreen setLoading={setLoading} />
+            {loading && <LoadingScreen setLoading={setLoading}/>} {/* Tampilkan LoadingScreen hanya saat loading */}
 
             {/* Konten utama */}
             <div className={`relative bg-[url('/sm-comingsoon.svg')] md:bg-[url('/md-comingsoon.svg')] lg:bg-[url('/lg-comingsoon.svg')] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center transition-opacity duration-1000 ${loading ? "opacity-0" : "opacity-100"}`}>
@@ -46,11 +72,9 @@ const Comingsoon = () => {
                     </div>
 
                     {/* Tombol */}
-                    <a href="/" >
                     <button ref={buttonRef} className="mt-3 bg-[#E9557F] font-poppins text-[#F8E6D2] font-bold md:text-xl lg:font-semibold lg:text-2xl px-4 py-1 lg:py-2 rounded-xl shadow-lg border-2 border-[#F8E6D2] hover:bg-pink-600">
                         Kembali ke beranda
                     </button>
-                    </a>
                 </div>
             </div>
         </div>
