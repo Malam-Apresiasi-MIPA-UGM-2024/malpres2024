@@ -4,6 +4,7 @@ const BintangTamu = () => {
       <div className="bg-white rounded-lg p-3 mb-8 w-48 text-center font-bold text-[#E9557F] text-xl">
         Bintang Tamu
       </div>
+      {/* test */}
       {/* Star Element */}
       <div className="absolute left-0 transform -translate-y-1/2 z-0 mt-[12rem]">
         <img
