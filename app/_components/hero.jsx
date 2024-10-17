@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="md:mt-[6rem] mt-[90px] relative font-poppins">
       <div
-        className="w-[97vw] h-[550px] md:h-[600px] lg:bg-[url('/banner_malpres.svg')] md:bg-[url('/banner_malpres_mdsm.svg')] bg-[url('/banner_malpres_sm.svg')] mx-auto mt-8 bg-cover bg-center border-2 border-[#E9557F] rounded-lg"
+        className="w-[97vw] h-[550px] md:h-[600px] lg:bg-[url('/banner_malpres.png')] md:bg-[url('/banner_malpres_mdsm.png')] bg-[url('/banner_malpres_sm.png')] mx-auto mt-8 bg-cover bg-center border-2 border-[#E9557F] rounded-lg"
       >
         <div className="absolute inset-0 flex justify-center items-center">
           <img src="/logo-hero-malpres.svg" alt="Malpres Logo" className="w-512 h-512" />
