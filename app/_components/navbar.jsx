@@ -12,6 +12,20 @@ const Navbar = () => {
         <Image src="/logo_malpres.svg" alt="Malpres Logo" width={120} height={120} />
       </div>
 
+      <div className={`flex items-center space-x-8 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
+      <a href="/comingsoon" className={`${isOpen ? '' : 'hidden'}`}>
+          <button className="bg-[#E9557F] font-semibold text-white py-2 px-6 rounded-lg hover:bg-pink-400">
+            Dapatkan Tiket
+          </button>
+        </a>
+        <a href="/comingsoon" className="text-[#E9557F] font-semibold hover:text-pink-500">Voting</a>
+        <a href="/comingsoon"className={`${isOpen ? 'hidden' : ''}`}>
+          <button className="bg-[#E9557F] font-semibold text-white py-2 px-6 rounded-lg hover:bg-pink-400">
+            Dapatkan Tiket
+          </button>
+        </a>
+      </div>
+
       <div className="md:hidden flex">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -32,15 +46,6 @@ const Navbar = () => {
             />
           </svg>
         </button>
-      </div>
-
-      <div className={`flex items-center space-x-8 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
-        <a href="/comingsoon" className="text-[#E9557F] font-semibold hover:text-pink-500">Voting</a>
-        <a href="/comingsoon">
-          <button className="bg-[#E9557F] font-semibold text-white py-2 px-6 rounded-lg hover:bg-pink-400">
-            Dapatkan Tiket
-          </button>
-        </a>
       </div>
     </nav>
   );
