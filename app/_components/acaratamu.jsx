@@ -11,25 +11,19 @@ const Acaratamu = () => {
           Acara Tamu
         </div>
         <div className="relative z-10 flex flex-col md:flex-row justify-around w-full max-w-4xl space-y-4 md:space-y-0 md:space-x-2 mb-[2rem]">
-          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-1/3">
-            <img src="/realityclub.svg" alt="Guest 1" className="w-full rounded-lg" />
-            <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-transparent rounded-b-lg"></div>
-            <div className="absolute bottom-0 left-0 w-full h-1/4 flex p-[1rem]">
-              <p className="text-white font-bold text-2xl">To Be Announced</p>
+          <div className="relative text-center border-white border-2 rounded-lg">
+            <div className="relative rounded-lg overflow-hidden">
+              <img src="/tba-acara.svg" alt="Guest 1" className="w-full object-cover" />
             </div>
           </div>
-          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-1/3">
-            <img src="/realityclub.svg" alt="Guest 2" className="w-full rounded-lg" />
-            <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-transparent rounded-b-lg"></div>
-            <div className="absolute bottom-0 left-0 w-full h-1/4 flex p-[1rem] text-3xl">
-              <p className="text-white font-bold text-2xl">To Be Announced</p>
+          <div className="relative text-center border-white border-2 rounded-lg">
+            <div className="relative rounded-lg overflow-hidden">
+              <img src="/tba-acara.svg" alt="Guest 1" className="w-full object-cover" />
             </div>
           </div>
-          <div className="relative text-center border-white border-2 rounded-lg w-full md:w-1/3">
-            <img src="/realityclub.svg" alt="Guest 3" className="w-full rounded-lg" />
-            <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-transparent rounded-b-lg"></div>
-            <div className="absolute bottom-0 left-0 w-full h-1/4 flex p-[1rem] text-3xl">
-              <p className="text-white font-bold text-2xl">To Be Announced</p>
+          <div className="relative text-center border-white border-2 rounded-lg">
+            <div className="relative rounded-lg overflow-hidden">
+              <img src="/tba-acara.svg" alt="Guest 1" className="w-full object-cover" />
             </div>
           </div>
         </div>
