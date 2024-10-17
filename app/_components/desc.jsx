@@ -18,7 +18,7 @@ const Desc = () => {
             >
                 {/* Title */}
                 <div className="flex justify-center items-center min-h-[2rem] mt-[2rem]">
-                  <div className="bg-white mt-[2rem] rounded-lg w-[14rem] p-3 w-48 text-center font-bold text-[#E9557F] text-xl">
+                  <div className="bg-white text-lg mt-4 rounded-lg w-[14rem] p-3 text-center font-bold text-[#E9557F] md:text-xl">
                     Tentang Malpres
                   </div>
                 </div>
