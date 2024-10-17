@@ -6,8 +6,14 @@ import HeroSection from "../_components/nominasihero";
 import Card from "../_components/nominasicard";
 import KategoriApresiasi from "../_components/nominasikategorismalltext";
 import LoadingScreen from "../_components/loadingscreen"; // Impor komponen LoadingScreen
+import { notFound } from 'next/navigation';
 
 const Nominasi = () => {
+    const belumRilis = true
+    if(belumRilis) {
+        notFound()
+    }
+
     const [loading, setLoading] = useState(true); // State untuk loading
 
     useEffect(() => {
