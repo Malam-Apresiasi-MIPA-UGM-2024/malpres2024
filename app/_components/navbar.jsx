@@ -6,12 +6,16 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   // useEffect to detect screen size and force isOpen to false if screen width is more than 768px
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setIsOpen(false); // Ensure menu is closed on larger screens
+        setIsOpen(false);// Ensure menu is closed on larger screens
+        setIsMobile(false);
+      } else {
+        setIsMobile(true);
       }
     };
 
@@ -71,8 +75,8 @@ const Navbar = () => {
 
       {/* Links */}
       <motion.div
-        initial={{ opacity: 0, y: -20 }}  // Animasi sebelum tampil
-        animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }} // Animasi ketika toggle
+        initial={{ opacity: isMobile? 0 : 1, y: isMobile ? -20 : 0 }}  //} Animasi sebelum tampil
+        animate={{ opacity: isOpen ? 1 : isMobile? 0 : 1, y: isOpen ? 0 : isMobile ? -20 : 0 }} // Animasi ketika toggle
         transition={{ duration: 0.5 }}    // Durasi animasi
         className={`flex items-center space-x-8 ${isOpen ? 'flex' : 'hidden'} mr-44 md:flex`}
       >
