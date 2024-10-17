@@ -12,9 +12,11 @@ const Hero = () => {
         </div>
         <div className="absolute inset-x-0 bottom-8 w-[500px] h-16 bg-white mx-auto md:flex justify-between items-center p-2 rounded-lg z-10 hidden">
           <span className="text-lg font-bold text-[#E9557F] ml-[1rem]">Dapatkan Tiket Sekarang!</span>
+          <a href="/comingsoon">
           <button className="bg-[#E9557F] text-white text-sm md:text-base lg:text-lg py-2 px-4 w-56 rounded-lg hover:bg-pink-400">
             Dapatkan Sekarang
           </button>
+          </a>
         </div>
       </div>
     </div>
