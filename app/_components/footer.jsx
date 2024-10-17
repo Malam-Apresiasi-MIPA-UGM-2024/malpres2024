@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     // CONTAINER
-    <div className="flex flex-col md:flex-row items-center justify-between p-[2rem] bg-[url('/bg-footer.svg')] bg-no-repeat bg-cover bg-center w-full">
+    <div className="flex flex-col md:flex-row items-center justify-between p-[2rem] bg-[url('/bg-footer.svg')] bg-no-repeat bg-cover bg-center w-full font-poppins">
       {/* BOX 1 */}
       <div className="flex-1 flex items-center justify-center mb-4 md:mb-0">
         <img src="/malpres-footer.svg" alt="MALPRES" />

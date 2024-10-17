@@ -5,14 +5,14 @@
 @tailwind utilities;
 
 :root {
-  --background: linear-gradient(180deg, #B7BC99 0vw, #B4BB8C 26vw, #FFBACE 100vw);
+  --background: linear-gradient(180deg, #B7BC99 0vw, #B4BB8C 26vw, #B4BB8C 100vw);
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
 
-    --background: linear-gradient(180deg, #B7BC99 0vw, #B4BB8C 26vw, #FFBACE 100vw);
+    --background: linear-gradient(180deg, #B7BC99 0vw, #B4BB8C 26vw, #B4BB8C 100vw);
     --foreground: #ededed;
   }
 }
