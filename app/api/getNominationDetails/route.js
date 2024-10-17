@@ -4,7 +4,16 @@ import { sheetExists } from ".././controller/sheetExists"
 import { client } from ".././controller/gsheetAuthorize"
 
 export async function POST(req, res) {
-    req = await req.json()
+    try {
+      req = await req.json()
+    } catch(err) {
+      return NextResponse.json({
+          "result": "failed",
+          "status": 400,
+          "error": "Invalid JSON",
+      }, {status: 400})
+    }
+
     //ensure request body exists
     if(req["nominasi"] == undefined) {
         return NextResponse.json({

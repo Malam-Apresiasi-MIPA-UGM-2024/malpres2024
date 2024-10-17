@@ -6,7 +6,16 @@ import { sheetExists } from ".././controller/sheetExists"
 import { client } from ".././controller/gsheetAuthorize"
 
 export async function POST(req, res) {
+  try {
     req = await req.json()
+  } catch(err) {
+    return NextResponse.json({
+        "result": "failed",
+        "status": 400,
+        "error": "Invalid JSON",
+    }, {status: 400})
+  }
+  
   // cek apakah request body sesuai dengan yang diinginkan
   if (!isData(req)) {
     return NextResponse.json({
