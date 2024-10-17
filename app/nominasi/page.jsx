@@ -3,24 +3,15 @@ import { notFound } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Footer from "../_components/footer";
 import LoadingScreen from "../_components/loadingscreen"; // Impor komponen LoadingScreen
-<<<<<<< HEAD
 import Navbar from "../_components/navbar";
 import Card from "../_components/nominasicard";
 import HeroSection from "../_components/nominasihero";
 import KategoriApresiasi from "../_components/nominasikategorismalltext";
 
 const Nominasi = () => {
-    const belumRilis = true;
-    if(belumRilis) {
-        notFound();
-=======
-import { notFound } from 'next/navigation';
-
-const Nominasi = () => {
     const belumRilis = true
     if(belumRilis) {
         notFound()
->>>>>>> 70074a885e62eb8362aefee037cd6fd4977b6ee0
     }
 
     const [loading, setLoading] = useState(true); // State untuk loading
