@@ -8,9 +8,9 @@ export async function POST(req, res) {
     //ensure request body exists
     if(req["nominasi"] == undefined) {
         return NextResponse.json({
-            result: "failed",
-            status: 400,
-            error: "Bad Request, please check your request body",
+            "result": "failed",
+            "status": 400,
+            "error": "Bad Request, please check your request body",
         }, {status: 400})
     }
 
@@ -21,9 +21,9 @@ export async function POST(req, res) {
 
     if(!nominasiExists) {
       return NextResponse.json({
-        result: "failed",
-        status: 400,
-        error: "Nomination does not exist",
+        "result": "failed",
+        "status": 400,
+        "error": "Nomination does not exist",
     }, {status: 400})
     } else {
       let shortDesc = await read(nominasi + "!A1", client)
@@ -57,6 +57,8 @@ export async function POST(req, res) {
       });
 
       return NextResponse.json({
+        "result": "success",
+        "status": 200,
         "shortDesc": shortDesc[0][0],  //function read returns a 2d array, we just need the value inside
         "candidates": candidates
       })

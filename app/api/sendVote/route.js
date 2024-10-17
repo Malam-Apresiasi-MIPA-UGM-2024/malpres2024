@@ -10,9 +10,9 @@ export async function POST(req, res) {
   // cek apakah request body sesuai dengan yang diinginkan
   if (!isData(req)) {
     return NextResponse.json({
-      result: "failed",
-      status: 400,
-      error: "Bad Request, please check your request body",
+      "result": "failed",
+      "status": 400,
+      "error": "Bad Request, please check your request body",
     }, {status: 400})
   }
 
@@ -24,9 +24,9 @@ export async function POST(req, res) {
 
   if (!nominasiExists) {
     return NextResponse.json({
-      result: "failed",
-      status: 400,
-      error: "Nomination does not exist",
+      "result": "failed",
+      "status": 400,
+      "error": "Nomination does not exist",
     }, {status: 400})
   }
 
@@ -35,15 +35,15 @@ export async function POST(req, res) {
 
   if (checkEmail.duplicated) {
     return NextResponse.json({
-      result: "failed",
-      status: 400,
-      error: "Email already registered",
+      "result": "failed",
+      "status": 400,
+      "error": "Email already registered",
     }, {status: 400})
   } else if (checkNIM.duplicated) {
     return NextResponse.json({
-      result: "failed",
-      status: 400,
-      error: "NIM already registered",
+      "result": "failed",
+      "status": 400,
+      "error": "NIM already registered",
     }, {status: 400})
   }
   // jika belum, maka tambahkan data ke sheets
@@ -53,9 +53,9 @@ export async function POST(req, res) {
         let { namaLengkap, email, NIM, departemen, jurusan, pilihan } = req;
         let values = [[namaLengkap, email, NIM, departemen, jurusan, pilihan]];
         append(nominasi + "!A2", values, client)
-        return NextResponse.json({ result: "success", status: 200 })
+        return NextResponse.json({ "result": "success", "status": 200 })
     } catch (err) {
-        return NextResponse.json({ result: "failed", status: 400, error: err}, {status: 400})
+        return NextResponse.json({ "result": "failed", "status": 400, "error": err}, {status: 400})
     }
   }
 }
