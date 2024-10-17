@@ -15,13 +15,42 @@ const Timeline = () => {
         <div className="bg-white rounded-lg p-2 mb-8 w-48 text-center font-bold text-[#E9557F] text-xl relative z-10 border-2 border-black">
             Timeline
         </div>
-        <div className="flex flex-col md:flex-row justify-around w-full max-w-4xl space-y-4 md:space-y-0 md:space-x-2 relative z-10 mb-[4rem]">
-          <div className="text-center ">
-            <img src="/item-ticketing.svg" alt="Guest 1" className="w-full rounded-lg" />
-          </div>
+        <div className="flex flex-col md:flex-row justify-around items-center w-full max-w-4xl space-y-4 md:space-y-0 md:space-x-2 relative z-10 mb-[4rem]">
+          {/* Box */}
           <div className="text-center">
-            <img src="/item-voting.svg" alt="Guest 2" className="w-full rounded-lg" />
+            <div className="rounded-lg bg-[url('/Ticketing.svg')] bg-center bg-no-repeat lg:w-[18rem] w-[15rem] lg:h-[18rem] h-[15rem] relative flex flex-col justify-between items-center overflow-hidden">
+              {/* Date */}
+              <div className="w-full bg-[#E9557F] text-white py-2 flex justify-center items-center">
+                <p className="text-lg font-bold">2 November 2024</p>
+              </div>
+              <p className="text-4xl font-bold mt-4 mb-6">Ticketing</p>
+            </div>
           </div>
+          {/* End of Box */}
+          {/* Box */}
+          <div className="text-center">
+            <div className="rounded-lg bg-[url('/TBA.svg')] bg-center bg-no-repeat lg:w-[18rem] w-[15rem] lg:h-[18rem] h-[15rem] relative flex flex-col justify-between items-center overflow-hidden">
+              {/* Date */}
+              <div className="w-full bg-[#E9557F] text-white py-2 flex justify-center items-center">
+                <p className="text-lg font-bold">TBA</p>
+              </div>
+              <p className="text-4xl font-bold mt-4 mb-6">Live Show</p>
+            </div>
+          </div>
+          {/* End of Box */}
+          {/* Box */}
+          <div className="text-center">
+            <div className="rounded-lg bg-[url('/Voting.svg')] bg-center bg-no-repeat lg:w-[18rem] w-[15rem] lg:h-[18rem] h-[15rem] relative flex flex-col justify-between items-center overflow-hidden">
+              {/* Date */}
+              <div className="w-full bg-[#E9557F] text-white py-2 flex justify-center items-center">
+                <p className="text-lg font-bold">23 Oktober 2024</p>
+              </div>
+              <p className="text-4xl font-bold mt-4 mb-6">Voting</p>
+            </div>
+          </div>
+          {/* End of Box */}
+          
+          
         </div>
 
       {/* Animated Text at the Bottom */}

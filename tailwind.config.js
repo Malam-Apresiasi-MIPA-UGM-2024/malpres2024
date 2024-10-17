@@ -13,6 +13,9 @@ module.exports = {
       blur: {
         xs: '2px', // Custom blur value
       },
+      fontSize: {
+        'xxs': '0.6rem', // Custom font size (10px)
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
