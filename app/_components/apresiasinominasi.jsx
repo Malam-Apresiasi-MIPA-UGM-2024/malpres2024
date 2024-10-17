@@ -2,12 +2,12 @@
 
 const ApresiasiNominasi = () => {
   return (
-    <div className="flex justify-center items-center relative">
+    <div className="flex justify-center items-center relative font-poppins">
       {/* Star Image */}
       <img
         src="/star-silver.svg"
         alt="Star Silver"
-        className="absolute left-0 top-0 w-[10rem] md:w-[16rem] lg:w-[30rem] z-10"
+        className="absolute left-0 md:top-24 top-10 w-[10rem] md:w-[16rem] lg:w-[24rem] z-10"
       />
       <div className="rounded-lg w-[95rem] relative text-center mt-[5rem] border-white border-2 mx-[1rem]">
         {/* Background image */}
@@ -16,20 +16,20 @@ const ApresiasiNominasi = () => {
           <img
             src="/bg-apresiasinominasi.png"
             alt="Apresiasi Nominasi"
-            className="w-full h-full object-cover object-center opacity-90 filter blur-xs"
+            className="w-full h-full object-cover object-center opacity-90 filter blur-sm md:blur-xs"
           />
           <div className="absolute inset-0 bg-[#E9557F] opacity-50"></div>
         </div>
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
             <h1
-              className="text-5xl md:text-7xl font-extrabold mb-2"
+              className="text-5xl md:text-7xl font-extrabold mb-2 font-poppins"
               style={{
-                WebkitTextStroke: '2px #E9557F',
+                WebkitTextStroke: '0.5px #E9557F',
               }}
             >
               Apresiasi Nominasi
             </h1>
-            <p className="text-xl md:text-3xl mx-6 my-6 font-normal">
+            <p className="text-xl md:text-3xl mx-6 my-6 font-normal font-poppins">
               beri penghargaan terhadap yang terbaik atas pencapaian yang diraih
             </p>
             <a href="/comingsoon">

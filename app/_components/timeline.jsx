@@ -2,13 +2,13 @@
 
 const Timeline = () => {
   return (
-    <div className="bg-[url('/bg-timeline.svg')] bg-cover bg-center p-8 flex flex-col items-center relative w-[100%]">
+    <div className="bg-[url('/bg-timeline.svg')] bg-cover bg-center p-8 flex flex-col items-center relative w-[100%] font-poppins">
       {/* Animated Text at the Top */}
       <div className="bg-[#FFFBE6] text-[#E92F77] text-[32px] flex justify-around overflow-hidden absolute top-0 left-0 right-0 border-t-2 border-b-2 border-black">
         <div className="animate-marquee whitespace-nowrap">
-          <span className="mx-40">Malpres 2024</span>
-          <span className="mx-40">Malpres 2024</span>
-          <span className="mx-40">Malpres 2024</span>
+          <span className="mx-40 font-poppins">Malam Apresiasi MIPA 2024</span>
+          <span className="mx-40 font-poppins">Malam Apresiasi MIPA 2024</span>
+          <span className="mx-40 font-poppins">Malam Apresiasi MIPA 2024</span>
         </div>
       </div>
 
@@ -27,9 +27,9 @@ const Timeline = () => {
       {/* Animated Text at the Bottom */}
       <div className="bg-[#FFFBE6] text-[#E92F77] text-[32px] flex justify-around overflow-hidden absolute bottom-0 left-0 right-0 border-t-2 border-b-2 border-black">
         <div className="animate-marquee whitespace-nowrap">
-          <span className="mx-40">Malpres 2024</span>
-          <span className="mx-40">Malpres 2024</span>
-          <span className="mx-40">Malpres 2024</span>
+          <span className="mx-40 font-poppins">Malam Apresiasi MIPA 2024</span>
+          <span className="mx-40 font-poppins">Malam Apresiasi MIPA 2024</span>
+          <span className="mx-40 font-poppins">Malam Apresiasi MIPA 2024</span>
         </div>
       </div>
     </div>
