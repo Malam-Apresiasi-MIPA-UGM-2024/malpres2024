@@ -34,7 +34,7 @@ const Navbar = () => {
         transition={{
           opacity: { duration: 0.8 }, // Transisi cepat untuk muncul
           width: { duration: 0.8 },   // Transisi cepat untuk lebar
-          exit: { duration: 1.2 }     // Transisi lambat untuk menghilang
+          exit: { duration: 1.6 }     // Transisi lambat untuk menghilang
         }}
         className={`flex items-center ml-2`}
       >
@@ -54,14 +54,14 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: isMobile ? 0 : 1, x: isMobile ? 20 : 0 }}
             transition={{
-              opacity: { duration: 1.2 },  // Transisi lambat untuk muncul
-              x: { duration: 0.8 },        // Transisi lambat untuk posisi
+              opacity: { duration: 1.6 },  // Transisi lambat untuk muncul
+              x: { duration: 1.6 },        // Transisi lambat untuk posisi
               exit: { duration: 0.8 }      // Transisi cepat untuk menghilang
             }}
             className={`flex items-center space-x-8 ml-2`}
           >
             <a href="/comingsoon" className="text-[#E9557F] font-semibold hover:text-pink-500">Voting</a>
-            <button className="bg-[#E9557F] w-48 text-sm md:text-base font-semibold text-white py-2 rounded-lg hover:bg-white border-2 border-[#E9557F] hover:text-[#E9557F] hover:border-[#E9557F]">
+            <button className="bg-[#E9557F] w-48 text-sm md:text-base font-semibold text-white rounded-lg hover:bg-white border-2 border-[#E9557F] hover:text-[#E9557F] hover:border-[#E9557F]">
               <a href="/comingsoon">
                 Dapatkan Tiket
               </a>
