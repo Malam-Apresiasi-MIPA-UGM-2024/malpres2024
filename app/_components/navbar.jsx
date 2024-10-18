@@ -28,10 +28,10 @@ const Navbar = () => {
 
       {/* Logo */}
       <motion.div
-        initial={{ opacity: 1, width: 'auto' }}
+        initial={{ opacity: 1, width: 0 }}
         animate={{ opacity: isOpen && isMobile ? 0 : 1, width: isOpen && isMobile ? 0 : 'auto' }}
         exit={{ opacity: 0, width: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1 }}
         className={`flex items-center`}
       >
         <Image src="/logo_malpres.svg" alt="Malpres Logo" width={120} height={120} />

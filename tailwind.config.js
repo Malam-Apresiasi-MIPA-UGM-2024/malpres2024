@@ -26,8 +26,12 @@ module.exports = {
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%': { transform: 'translateX(75%)' },
+          '100%': { transform: 'translateX(-75%)' },
+        },
+        marqueeReverse: {
+          '0%': { transform: 'translateX(-75%)' },
+          '100%': { transform: 'translateX(75%)' },
         },
         customPulse: {
           '0%, 100%': { opacity: '1' },  // Awal dan akhir tetap 100% opacity
@@ -42,7 +46,8 @@ module.exports = {
 
       },
       animation: {
-        marquee: 'marquee 10s linear infinite',
+        marquee: 'marquee 12.5s linear infinite',
+        marqueeReverse: 'marqueeReverse 12.5s linear infinite',
         'spin-slow' : 'spin 3s linear infinite',
         customPulse: 'customPulse 0.5s infinite',
         flipX: 'flipX 1.8s linear infinite',
