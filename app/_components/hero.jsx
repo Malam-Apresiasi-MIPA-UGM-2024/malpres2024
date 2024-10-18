@@ -8,9 +8,9 @@ const Hero = () => {
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
       transition={{ duration: 1.8 }}
-      className="md:mt-[5.5rem] mt-20 relative font-poppins"
+      className="md:mt-[5rem] mt-20 relative font-poppins"
     >
-      <div className="w-[97vw] h-[598px] md:h-[640px] lg:bg-[url('/banner_malpres.webp')] md:bg-[url('/banner_malpres_mdsm.webp')] bg-[url('/banner_malpres_sm.webp')] mx-auto mt-8 bg-cover bg-center border-2 border-[#E9557F] rounded-lg">
+      <div className="w-[97vw] h-[598px] md:h-[600px] lg:bg-[url('/banner_malpres.webp')] md:bg-[url('/banner_malpres_mdsm.webp')] bg-[url('/banner_malpres_sm.webp')] mx-auto mt-8 bg-cover bg-center border-2 border-[#E9557F] rounded-lg">
         
         {/* Logo with Bounce Animation */}
         <motion.div 
