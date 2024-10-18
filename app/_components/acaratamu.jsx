@@ -74,7 +74,10 @@ const Acaratamu = () => {
             Lokasi
           </p>
           <a href="https://maps.app.goo.gl/yqLubU7pVNJokg3W7" target="_blank" rel="noopener noreferrer">
-          <p className="bg-[#FFFFFF] text-[#AD285C] md:p-[0.5rem] p-[0.25rem] border-2 border-[#AD285C] rounded-r-lg font-semibold text-xxs md:text-base lg:text-lg xl:text-xl">
+          <p 
+          className="bg-[#FFFFFF] text-[#AD285C] md:p-[0.5rem] p-[0.25rem] border-2 border-[#AD285C] rounded-r-lg font-semibold text-xxs md:text-base lg:text-lg xl:text-xl
+          whileHover={{ scale: 1.05 }}
+          ">
             Gelanggang Inovasi dan Kreativitas UGM
           </p>
           </a>

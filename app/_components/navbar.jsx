@@ -22,7 +22,7 @@ const Navbar = () => {
     <motion.nav
       className="border-2 h-14 border-[#E9557F] py-3 px-[1rem] flex justify-start md:justify-between items-center mt-4 bg-[#FCD9C6] rounded-lg fixed top-0 z-20 font-poppins"
       initial={{ width: 0 }} // Width kecil saat awal render
-      animate={{ width: 'calc(100% - 16px)', left: '8px', right: '8px' }} // Margin 4px di kiri dan kanan
+      animate={{ width: 'calc(100% - 3vw)', left: '1.5vw', right: '1.5vw' }} // Margin 4px di kiri dan kanan
       transition={{ duration: 1 }} // Durasi animasi 1 detik
     >
 
