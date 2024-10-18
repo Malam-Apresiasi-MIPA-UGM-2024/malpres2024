@@ -38,12 +38,14 @@ const Navbar = () => {
         }}
         className={`flex items-center ml-2`}
       >
+        <a href="/">
         <Image
           src="/logo_malpres.svg"
           alt="Malpres Logo"
           width={isMobile ? 90 : 120}
           height={isMobile ? 90 : 120}
         />
+        </a>
       </motion.div>
 
       {/* Links */}
