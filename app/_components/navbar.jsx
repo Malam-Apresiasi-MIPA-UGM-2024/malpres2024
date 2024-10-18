@@ -50,7 +50,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }} // Animasi ketika toggle atau langsung tampil di layar besar
             exit={{ opacity: isMobile ? 0 : 1, x: isMobile ? 20 : 0 }} // Animasi saat keluar hanya di mobile
             transition={{ duration: 1 }}    // Durasi animasi
-            className={`flex-grow flex items-center space-x-8 ml-4`} // flex-grow menyesuaikan ruang
+            className={`flex-grow md:flex-grow-0 flex items-center space-x-8 ml-4`} // flex-grow menyesuaikan ruang
           >
             <a href="/comingsoon" className="text-[#E9557F] font-semibold hover:text-pink-500">Voting</a>
             <button className="bg-[#E9557F] w-48 text-sm md:text-base font-semibold text-white py-2 rounded-lg hover:bg-pink-400">
