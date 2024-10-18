@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const BintangTamu = () => {
   // Mengontrol animasi
   const controls = useAnimation();
-  
+
   // Menggunakan useInView untuk mendeteksi ketika elemen dalam viewport
   const [ref, inView] = useInView({
     triggerOnce: false,  // Animasi bisa terjadi lebih dari sekali
@@ -23,19 +23,21 @@ const BintangTamu = () => {
   }, [controls, inView]);
 
   // Variabel animasi untuk muncul (fade-in dan slide-up)
+  // Variabel animasi untuk muncul (fade-in dan slide-up)
   const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 50, transition: { duration: 2 } },  // Tambah durasi fade-out
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: 'easeInOut', staggerChildren: 0.2 }
+      transition: { duration: 1, ease: 'easeInOut', staggerChildren: 0.2 }
     }
   };
 
   const childVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    hidden: { opacity: 0, y: 50, transition: { duration: 2 } },  // Tambah durasi fade-out
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } }
   };
+
 
   return (
     <div className="bg-[#E9557F] p-8 flex flex-col items-center relative font-poppins" ref={ref}>
@@ -53,7 +55,7 @@ const BintangTamu = () => {
         className="absolute left-0 transform -translate-y-1/2 z-0 mt-[12rem]"
         initial={{ scale: 0, opacity: 0 }}
         animate={controls}  // Animasi dikontrol oleh useInView
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        transition={{ duration: 1.2, ease: 'easeOut' }}
       >
         <img
           src="/star-pink.svg"

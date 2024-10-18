@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="border-2 h-14 border-[#E9557F] py-3 px-[1rem] flex justify-between items-center mt-4 bg-[#FCD9C6] rounded-lg fixed top-0 z-20 font-poppins"
+      className="border-2 h-14 border-[#E9557F] py-3 px-[1rem] flex justify-start md:justify-between items-center mt-4 bg-[#FCD9C6] rounded-lg fixed top-0 z-20 font-poppins"
       initial={{ width: 0 }} // Width kecil saat awal render
       animate={{ width: 'calc(100% - 16px)', left: '8px', right: '8px' }} // Margin 4px di kiri dan kanan
       transition={{ duration: 1 }} // Durasi animasi 1 detik
@@ -28,17 +28,17 @@ const Navbar = () => {
 
       {/* Logo */}
       <motion.div
-        initial={{ opacity: 1, x: 0 }}
-        animate={{ opacity: isOpen && isMobile ? 0 : 1, x: isOpen && isMobile ? 0 : 'auto' }}
-        exit={{ opacity: 0, x: 0 }}
-        transition={{ duration: 1 }}
-        className={`flex items-center ${isOpen && isMobile ? 'hidden' : ''}`} // Hide logo saat open di mobile
+        initial={{ opacity: 1, width: 'auto' }}
+        animate={{ opacity: isOpen && isMobile ? 0 : 1, width: isOpen && isMobile ? 0 : 90 }}
+        exit={{ opacity: 0, width: 0 }}
+        transition={{ duration: 0.5 }}
+        className={`flex items-center ml-2`}
       >
         <Image
           src="/logo_malpres.svg"
           alt="Malpres Logo"
           width={isMobile ? 90 : 120}
-          height={isMobile ? 90 : 120}
+          height={isMobile ? 90 :120}
         />
       </motion.div>
 
@@ -49,8 +49,8 @@ const Navbar = () => {
             initial={{ opacity: isMobile ? 0 : 1, x: isMobile ? 20 : 0 }}  // Animasi sebelum tampil hanya untuk mobile
             animate={{ opacity: 1, x: 0 }} // Animasi ketika toggle atau langsung tampil di layar besar
             exit={{ opacity: isMobile ? 0 : 1, x: isMobile ? 20 : 0 }} // Animasi saat keluar hanya di mobile
-            transition={{ duration: 1 }}    // Durasi animasi
-            className={`flex-grow md:flex-grow-0 flex items-center space-x-8 ml-4`} // flex-grow menyesuaikan ruang
+            transition={{ duration: 0.5 }}    // Durasi animasi
+            className={`flex items-center space-x-8 ml-2`} // Menempel di kiri
           >
             <a href="/comingsoon" className="text-[#E9557F] font-semibold hover:text-pink-500">Voting</a>
             <button className="bg-[#E9557F] w-48 text-sm md:text-base font-semibold text-white py-2 rounded-lg hover:bg-pink-400">
@@ -64,7 +64,7 @@ const Navbar = () => {
 
       {/* Burger Button */}
       {isMobile && (  // Burger hanya muncul di layar kecil
-        <motion.div className="absolute right-4 top-4 z-30"> {/* Tambah z-30 */}
+        <motion.div className="absolute right-4 top-4">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-[#E9557F] focus:outline-none"
