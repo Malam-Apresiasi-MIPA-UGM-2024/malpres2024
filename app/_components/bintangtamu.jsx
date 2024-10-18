@@ -16,7 +16,7 @@ const BintangTamu = () => {
       </div>
       {/* Container - 1:1 */}
       <div className="md:hidden flex flex-col md:flex-row justify-around items-center w-full max-w-4xl space-y-4 md:space-x-2 md:space-y-0 relative z-10 mb-[2rem]">
-        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem] h-[18rem] lg:w-auto overflow-hidden">
+        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[15rem] h-[15rem] lg:w-auto overflow-hidden">
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
@@ -25,7 +25,7 @@ const BintangTamu = () => {
             </div>
           </div>
         </div>
-        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem] h-[18rem] lg:w-auto overflow-hidden">
+        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[15rem] h-[15rem] lg:w-auto overflow-hidden">
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
@@ -34,7 +34,7 @@ const BintangTamu = () => {
             </div>
           </div>
         </div>
-        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem] h-[18rem] lg:w-auto overflow-hidden">
+        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[15rem] h-[15rem] lg:w-auto overflow-hidden">
           <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
           <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
             <div className="flex">
@@ -47,7 +47,7 @@ const BintangTamu = () => {
 
       {/* Container */}
       <div className="hidden md:flex flex-col md:flex-row justify-around items-center w-full max-w-4xl space-y-4 md:space-x-2 md:space-y-0 relative z-10 mb-[2rem]">
-        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem] md:w-auto">
+        <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem]">
             <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
             <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
               <div className="flex">
@@ -56,7 +56,7 @@ const BintangTamu = () => {
               </div>
             </div>
           </div>
-          <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem] md:w-auto">
+          <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem]">
             <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
             <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
               <div className="flex">
@@ -65,7 +65,7 @@ const BintangTamu = () => {
               </div>
             </div>
           </div>
-          <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem] md:w-auto">
+          <div className="relative text-center rounded-lg border-[#D9D9D9] border-2 w-[18rem]">
             <img src="/tba-guest.svg" alt="Guest 1" className="w-full rounded-lg" />
             <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[rgba(255,255,255,0.25)] to-transparent rounded-b-lg">
               <div className="flex">
