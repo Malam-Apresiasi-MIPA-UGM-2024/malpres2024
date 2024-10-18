@@ -46,8 +46,8 @@ module.exports = {
 
       },
       animation: {
-        marquee: 'marquee 12.5s linear infinite',
-        marqueeReverse: 'marqueeReverse 12.5s linear infinite',
+        marquee: 'marquee 25s linear infinite',
+        marqueeReverse: 'marqueeReverse 25s linear infinite',
         'spin-slow' : 'spin 3s linear infinite',
         customPulse: 'customPulse 0.5s infinite',
         flipX: 'flipX 1.8s linear infinite',
