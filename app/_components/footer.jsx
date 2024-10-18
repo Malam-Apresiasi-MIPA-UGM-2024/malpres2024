@@ -14,10 +14,11 @@ const Footer = () => {
       <div className="flex-1">
         <ul className="list-none text-[#F9F9E0] ml-0 md:ml-[4rem]">
           <li className="my-4">Bulaksumur, Jl. Geografi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</li>
-          <li className="my-4">Kontak Email</li>
-          <li className="my-4">Nomor Telepon</li>
-          <li className="my-4">Instagram</li>
-          <li className="my-4">Facebook</li>
+          <li className="my-4"><a href="mailto:malpres.mipa@gmail.com">malpresmipaugm@gmail.com</a></li>
+          <li className="my-4"><a href="https://www.instagram.com/malpresmipaugm" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li className="my-4"><a href="https://x.com/malpresmipaugm" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li className="my-4"><a href="https://www.tiktok.com/@malpresmipaugm" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
+          <li className="my-4"><a href="https://youtube.com/@MalamApresiasiMIPAUGM" target="_blank" rel="noopener noreferrer">Youtube</a></li>
         </ul>
       </div>
     </div>
