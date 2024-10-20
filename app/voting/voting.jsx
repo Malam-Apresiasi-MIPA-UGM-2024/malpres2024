@@ -1,4 +1,10 @@
+"use client";
+
+import { useNominasiDll } from "../context/nominasiDll";
+
 const Hero = () => {
+  const { selectedNominasi } = useNominasiDll()
+
   return (
     <div className="relative h-auto bg-cover bg-center">
       <div
@@ -52,7 +58,7 @@ const Hero = () => {
             <div className="relative mt-10">
               <div className="text-center">
                 <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-8xl font-poppins font-extrabold  text-stroke transition duration-700">
-                  Judul Apresiasi
+                  {selectedNominasi}
                 </h1>
               </div>
               <div className="rounded-lg bg-white py-3 mx-5 md:mx-14 lg:mx-80 text-center mt-4 md:mt-8">
