@@ -31,7 +31,7 @@ const Hero = () => {
         }
     }
     fetchData();
-  }, [selectedNominasi]);
+  }, []);
 
   return (
     <div className="relative h-auto bg-cover bg-center">
@@ -112,7 +112,7 @@ const Hero = () => {
                       {candidate.nama}
                     </h2>
                     <p className="text-xs sm:text-xs md:text-sm lg:text-base font-poppins font-normal text-white mb-2">
-                      (Jurusan - Angkatan)
+                      {candidate.jurusan} {candidate.angkatan}
                     </p>
                     <p className="text-xs sm:text-xs md:text-sm lg:text-base font-poppins font-normal text-white mt-2">
                       {candidate.deskripsi}
