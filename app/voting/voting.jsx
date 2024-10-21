@@ -9,7 +9,7 @@ const Hero = () => {
   const { selectedNominasi } = useNominasiDll();
   const [details, setDetails] = useState({
     "result": "",
-    "status": 100,
+    "status": 0,
     "shortDesc": "",
     candidates: []
   });
@@ -60,7 +60,7 @@ const Hero = () => {
           <div>
             <div>
               <button className="rounded-lg bg-white py-1 px-3 mt-10 ml-4 md:px-5 lg:px-5 md:py-2 sm:ml-10 relative">
-                <a href="/" className="text-lg flex items-center">
+                <a href="/nominasi" className="text-lg flex items-center">
                   <svg
                     className="h-6 w-6 text-darkPink hover:text-secondary"
                     width="24"
