@@ -4,8 +4,10 @@ import axios from 'axios'
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useNominasiDll } from "../context/nominasiDll";
+import LoadingScreen from '../_components/loadingscreen';
 
 const Hero = () => {
+  const [loading, setLoading] = useState(true);
   const { selectedNominasi } = useNominasiDll();
   const [details, setDetails] = useState({
     "result": "",
@@ -25,6 +27,7 @@ const Hero = () => {
               router.push('/nominasi')
             }
             setDetails(response.data);
+            setLoading(false); 
         } catch (error) {
             console.error('Error fetching data:', error);
             router.push('/nominasi')
@@ -35,6 +38,7 @@ const Hero = () => {
 
   return (
     <div className="relative h-auto bg-cover bg-center">
+       {loading && <LoadingScreen setLoading={setLoading} />}
       <div
         className="absolute inset-0 opacity-80 w-full md:w-100rem h-full"
         style={{
