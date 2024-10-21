@@ -55,7 +55,7 @@ const Timeline = () => {
             <div className="w-full bg-[#E9557F] text-white py-2 flex justify-center items-center">
               <p className="text-lg font-bold">2 November 2024</p>
             </div>
-            <p className="text-4xl font-bold mt-4 mb-6">Ticketing</p>
+            <p className="text-4xl text-white font-bold mt-4 mb-6">Ticketing</p>
           </div>
         </motion.div>
 
@@ -71,7 +71,7 @@ const Timeline = () => {
             <div className="w-full bg-[#E9557F] text-white py-2 flex justify-center items-center">
               <p className="text-lg font-bold">TBA</p>
             </div>
-            <p className="text-4xl font-bold mt-4 mb-6">Live Show</p>
+            <p className="text-4xl text-white font-bold mt-4 mb-6">Live Show</p>
           </div>
         </motion.div>
 
@@ -87,7 +87,7 @@ const Timeline = () => {
             <div className="w-full bg-[#E9557F] text-white py-2 flex justify-center items-center">
               <p className="text-lg font-bold">23 Oktober 2024</p>
             </div>
-            <p className="text-4xl font-bold mt-4 mb-6">Voting</p>
+            <p className="text-4xl text-white font-bold mt-4 mb-6">Voting</p>
           </div>
         </motion.div>
       </div>
