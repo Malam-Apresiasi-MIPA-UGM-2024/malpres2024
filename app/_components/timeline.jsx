@@ -85,7 +85,7 @@ const Timeline = () => {
         >
           <div className="shadow-md rounded-lg bg-[url('/Voting.svg')] bg-center bg-no-repeat lg:w-[18rem] w-[15rem] lg:h-[18rem] h-[15rem] relative flex flex-col justify-between items-center overflow-hidden">
             <div className="w-full bg-[#E9557F] text-white py-2 flex justify-center items-center">
-              <p className="text-lg font-bold">23 Oktober 2024</p>
+              <p className="text-lg font-bold">28 Oktober 2024</p>
             </div>
             <p className="text-4xl text-white font-bold mt-4 mb-6">Voting</p>
           </div>
