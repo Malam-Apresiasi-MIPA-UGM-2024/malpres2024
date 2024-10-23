@@ -87,12 +87,12 @@ const Hero = () => {
         <div className="relative mt-10">
           <div className="text-center">
             <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-8xl font-poppins font-extrabold text-stroke transition duration-700">
-              Judul Apresiasi
+              {selectedNominasi}
             </h1>
           </div>
           <div className="rounded-lg bg-white py-3 mx-5 md:mx-14 lg:mx-80 text-center mt-4 md:mt-8">
             <h3 className="text-base sm:text-lg md:text-2xl font-poppins font-semibold text-[#6F2A3D] transition duration-700">
-              Penjelasan singkat mengenai kategori.
+              {details.shortDesc}
             </h3>
           </div>
         </div>

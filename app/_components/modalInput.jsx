@@ -9,6 +9,8 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
     major: ''
   });
 
+  const [majorOptions, setMajorOptions] = useState([])
+
   const [errorMessage, setErrorMessage] = useState(''); // For error message
 
   const handleClose = () => {
@@ -17,6 +19,19 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+
+    if(name == "department") {
+      if (value == "Departemen Matematika") {
+        setMajorOptions(["Aktuaria", "Statistika", "Matematika"]);
+      } else if (value == "Departemen Fisika") {
+        setMajorOptions(["Fisika", "Geofisika"]);
+      } else if (value == "Departemen Kimia") {
+        setMajorOptions(["Kimia"]);
+      } else {
+        setMajorOptions(["Elektronika dan Instrumentasi", "Ilmu Komputer"]);
+      }
+    }
+
     setFormData({ ...formData, [name]: value });
   };
 
@@ -109,8 +124,8 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
                 className="w-full p-2 border-solid border-2 border-[#E9557F] text-slate-400 font-poppins rounded-lg focus:outline-none"
               >
                 <option value="">Pilih departemen</option>
-                <option>Departemen Ilmu Komputer Elektronika</option>
                 <option>Departemen Fisika</option>
+                <option>Departemen Ilmu Komputer dan Elektronika</option>
                 <option>Departemen Kimia</option>
                 <option>Departemen Matematika</option>
                 {/* Add more options as needed */}
@@ -118,14 +133,18 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
             </div>
             <div className="mb-4">
               <label className="block text-[#FF5A5A] font-poppins font-bold mb-1">Jurusan</label>
-              <input
-                type="text"
+              <select
                 name="major"
                 value={formData.major}
                 onChange={handleInputChange}
-                className="w-full p-2 border-solid border-2 border-[#E9557F] rounded-lg focus:outline-none"
-                placeholder="Masukkan jurusan"
-              />
+                className="w-full p-2 border-solid border-2 border-[#E9557F] text-slate-400 font-poppins rounded-lg focus:outline-none"
+              >
+                <option value="">Pilih jurusan</option>
+                {majorOptions.map(majorOption => (
+                  <option>{majorOption}</option>
+                ))}
+                {/* Add more options as needed */}
+              </select>
             </div>
             <button
               type="submit"
