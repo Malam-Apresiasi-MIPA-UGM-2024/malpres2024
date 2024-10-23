@@ -9,6 +9,8 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
     major: ''
   });
 
+  const [errorMessage, setErrorMessage] = useState(''); // For error message
+
   const handleClose = () => {
     setIsModalOpen(false);
   };
@@ -18,8 +20,30 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
     setFormData({ ...formData, [name]: value });
   };
 
+  const validateNIM = (nim) => {
+    // Regular expression to match the NIM format xx/xxxxxx/PA/xxxxx
+    const nimPattern = /^\d{2}\/\d{6}\/PA\/\d{5}$/;
+    return nimPattern.test(nim);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Check if any field is empty
+    if (!formData.name || !formData.nim || !formData.department || !formData.major) {
+      setErrorMessage("Harap isi data dengan benar");
+      return;
+    }
+
+    // Check NIM format
+    if (!validateNIM(formData.nim)) {
+      // Set error message if NIM is invalid
+      setErrorMessage("NIM yang kamu masukkan tidak ada, coba lagi!");
+      return;
+    }
+
+    // Reset error message if all validations pass
+    setErrorMessage('');
     onSubmit(); // Trigger form submit to open confirmation modal
   };
 
@@ -33,14 +57,9 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
 
       {/* Modal content */}
       <div className="relative bg-[#F8E6D2] rounded-lg w-[90%] md:w-[70%] lg:w-[41%] mx-auto z-10 overflow-hidden">
-
         {/* Header with gradient background and left circle */}
         <div className="relative bg-[#E9557F] rounded-t-lg py-4 px-6 -mx-0 -mt-0 -mb-9">
-
-          {/* Circle inside the modal card, only half visible */}
           <div className="absolute -top-6 left-0 w-20 h-20 bg-gradient-to-br from-[#FAA4AE] to-[#FF3987] rounded-full"></div>
-
-          {/* Close button inside the header with correct background */}
           <button
             className="absolute top-4 right-8  text-2xl font-poppins font-thin text-white hover:text-gray-200 z-10"
             onClick={handleClose}
@@ -55,6 +74,9 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
 
         {/* Form section */}
         <div className="mt-8 p-6">
+          {errorMessage && (
+            <div className="mb-4 text-red-500 font-poppins">{errorMessage}</div>
+          )}
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-[#FF5A5A] font-poppins font-bold mb-1">Nama</label>
@@ -86,7 +108,7 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
                 onChange={handleInputChange}
                 className="w-full p-2 border-solid border-2 border-[#E9557F] text-slate-400 font-poppins rounded-lg focus:outline-none"
               >
-                <option>Pilih departemen</option>
+                <option value="">Pilih departemen</option>
                 <option>Departemen Ilmu Komputer Elektronika</option>
                 <option>Departemen Fisika</option>
                 <option>Departemen Kimia</option>
