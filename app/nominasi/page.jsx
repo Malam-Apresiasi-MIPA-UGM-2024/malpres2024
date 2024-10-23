@@ -62,7 +62,7 @@ const kategoriList = [
     },
     {
         title: "Favorite Lecturer",
-        desc: "Nomniasi yang ditujukan pada dosen FMIPA UGM yang paling diidolakan dan berpengaruh besar dalam membentuk karakter serta minat belajar mahasiswa/i FMIPA UGM"
+        desc: "Nominasi yang ditujukan pada dosen FMIPA UGM yang paling diidolakan dan berpengaruh besar dalam membentuk karakter serta minat belajar mahasiswa/i FMIPA UGM"
     },
     {
         title: "Empowering Role Model Student",
@@ -81,23 +81,23 @@ const kategoriList = [
         desc: "Penghargaan bagi UKM atau organisasi di FMIPA UGM yang telah memberikan kontribusi nyata dalam kegiatan sosial"
     },
     {
-        title: "The best researcher",
+        title: "The Best Researcher",
         desc: "Nominasi yang diberikan bagi mahasiswa/i aktif FMIPA UGM, baik secara individu maupun kelompok, yang memiliki keunggulan dan kontribusi signifikan dalam bidang penelitian"
     },
     {
-        title: "My comfort zone",
+        title: "My Comfort Zone",
         desc: "Nominasi yang ditunjukkan kepada tempat di kampus FMIPA UGM yang disukai oleh mahasiswa. Tempat-tempat ini dipilih berdasarkan kenyamanan dan fungsionalitasnya"
     },
     {
-        title: "Innovatice lecturer",
+        title: "Innovative Lecturer",
         desc: "Nominasi untuk tenaga pendidik FMIPA UGM yang memiliki model pengajaran inovatif, kreatif, dan mampu secara signifikan meningkatkan efektivitas pembelajaran secara aktif"
     },
     {
-        title: "Art exhibition",
+        title: "Art Exhibition",
         desc: "Nominasi untuk mengapresiasi karya luar biasa civitas akademika FMIPA yang memiliki minat dan bakat yang luar biasa di bidang seni, kreativitas, serta kontribusi yang inspiratif"
     },
     {
-        title: "The most outstanding lecturer publication",
+        title: "The Most Outstanding Lecturer Publication",
         desc: "Nominasi ditujukan kepada tenaga pendidik FMIPA UGM dengan publikasi ilmiah berkualitas tinggi"
     },
 

@@ -2,11 +2,21 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRouter } from "next/navigation";
+import { useNominasiDll } from "../context/nominasiDll";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Card = ({ title, desc }) => {
     const cardRef = useRef(null);
+
+    const router = useRouter();
+    const { setSelectedNominasi } = useNominasiDll()
+
+    const toVotingPage = () => {
+        setSelectedNominasi(title);
+        router.push('/voting');
+    };
 
     useEffect(() => {
         // Apply GSAP animation on the Card when it comes into view
@@ -48,7 +58,7 @@ const Card = ({ title, desc }) => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center mb-2 md:mb-8 lg:mb-12 ">
-                    <button className="w-48 h-11 md:w-44 md:text-lg border bg-[#E9557F] text-white rounded-md text-sm font-semibold py-1.5">
+                    <button onClick={toVotingPage} className="w-48 h-11 md:w-44 md:text-lg border bg-[#E9557F] text-white rounded-md text-sm font-semibold py-1.5">
                         Beri Pilihanmu
                     </button>
                 </div>

@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import { Poppins } from 'next/font/google';
 import "./globals.css";
 import { Suspense } from 'react';  // Import Suspense dari React
+import { ClientWrapper } from "./_components/clientWrapper"
 import ClientLayout from './_components/ClientLayout'; // Import komponen Loading
 
 const geistSans = localFont({
@@ -31,10 +32,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Bungkus children dengan Suspense dan tampilkan Loading saat konten belum dimuat */}
-        <ClientLayout>
-          {children}
-        </ClientLayout>
+        <ClientWrapper>
+          {/* Bungkus children dengan Suspense dan tampilkan Loading saat konten belum dimuat */}
+          <ClientLayout>
+            {children}
+          </ClientLayout>
+        </ClientWrapper>
       </body>
     </html>
   );
