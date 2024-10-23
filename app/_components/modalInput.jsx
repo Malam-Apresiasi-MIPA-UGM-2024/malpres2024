@@ -21,7 +21,7 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
   };
 
   const validateNIM = (nim) => {
-    // Regular expression to match the NIM format xx/xxxxxx/PA/xxxxx
+    // Check format NIM harus begitu deh yah xx/xxxxxx/PA/xxxxx
     const nimPattern = /^\d{2}\/\d{6}\/PA\/\d{5}$/;
     return nimPattern.test(nim);
   };
