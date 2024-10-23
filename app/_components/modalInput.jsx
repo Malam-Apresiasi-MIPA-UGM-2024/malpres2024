@@ -27,7 +27,7 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
         setMajorOptions(["Fisika", "Geofisika"]);
       } else if (value == "Departemen Kimia") {
         setMajorOptions(["Kimia"]);
-      } else {
+      } else if (value == "Departemen Ilmu Komputer dan Elektronika") {
         setMajorOptions(["Elektronika dan Instrumentasi", "Ilmu Komputer"]);
       }
     }
