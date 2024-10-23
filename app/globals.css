@@ -46,10 +46,10 @@ body {
 }
 @media (min-width: 1034px) {
   .text-stroke {
-    -webkit-text-stroke: 4px #E9557F; /* Mengatur ketebalan dan warna outline untuk layar dengan lebar minimal 768px */
+    -webkit-text-stroke: 4px #E9557F;
   }
 
   .text-stroke2 {
-    -webkit-text-stroke: 0.5px black; /* Mengatur ketebalan dan warna outline untuk layar dengan lebar minimal 768px */
+    -webkit-text-stroke: 0.5px black;
   }
 }

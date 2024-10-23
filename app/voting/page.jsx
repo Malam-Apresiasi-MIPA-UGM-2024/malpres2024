@@ -6,10 +6,10 @@ import Vote from './voting';
 import Footer from '../_components/footer';
 
 export default function Voting() {
-  const belumRilis = true;
-    if(belumRilis) {
-        notFound();
-    }
+  // const belumRilis = true;
+  //   if(belumRilis) {
+  //       notFound();
+  //   }
     
   return (
     <div>
