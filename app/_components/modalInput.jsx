@@ -141,7 +141,7 @@ export default function ModalInput({ onSubmit, setIsModalOpen }) {
               >
                 <option value="">Pilih jurusan</option>
                 {majorOptions.map(majorOption => (
-                  <option>{majorOption}</option>
+                  <option key={majorOption}>{majorOption}</option>
                 ))}
                 {/* Add more options as needed */}
               </select>
