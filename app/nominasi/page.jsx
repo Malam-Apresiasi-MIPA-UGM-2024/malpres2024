@@ -11,7 +11,7 @@ import KategoriApresiasi from "../_components/nominasikategorismalltext";
 const Nominasi = () => {
     const belumRilis = true
     if(belumRilis) {
-        notFound()
+        // notFound()
     }
 
     const [loading, setLoading] = useState(true); // State untuk loading
